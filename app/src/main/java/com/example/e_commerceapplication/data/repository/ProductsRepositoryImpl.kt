@@ -1,6 +1,7 @@
 package com.example.e_commerceapplication.data.repository
 
 import com.example.e_commerceapplication.data.EcommerceApi
+import com.example.e_commerceapplication.data.remote.dto.ProductDto
 import com.example.e_commerceapplication.data.remote.dto.ProductsDto
 import com.example.e_commerceapplication.domain.repository.ProductRepository
 import javax.inject.Inject
@@ -11,5 +12,9 @@ class ProductsRepositoryImpl @Inject constructor(
 
     override suspend fun getProducts(): List<ProductsDto> {
         return api.getProducts()
+    }
+
+    override suspend fun getProduct(productId: Int): ProductDto {
+        return api.getProduct(productId)
     }
 }

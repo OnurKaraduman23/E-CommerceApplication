@@ -6,6 +6,18 @@
 
     <fragment
         android:id="@+id/productsFragment"
-        android:name="com.example.e_commerceapplication.presentation.fragments.ProductsFragment"
-        android:label="ProductsFragment" />
+        android:name="com.example.e_commerceapplication.presentation.fragments.products.ProductsFragment"
+        android:label="ProductsFragment" >
+        <action
+            android:id="@+id/action_productsFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.e_commerceapplication.presentation.fragments.product_detail.ProductDetailFragment"
+        android:label="ProductDetailFragment" >
+        <argument
+            android:name="productId"
+            app:argType="integer" />
+    </fragment>
 </navigation>

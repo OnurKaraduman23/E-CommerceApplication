@@ -56,10 +56,15 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     //Hilt
-    implementation("com.google.dagger:hilt-android:2.48")
+    implementation("com.google.dagger:hilt-android:2.49")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
     kapt("com.google.dagger:hilt-android-compiler:2.48")
+
+    //Coil
+    implementation("io.coil-kt:coil:2.5.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

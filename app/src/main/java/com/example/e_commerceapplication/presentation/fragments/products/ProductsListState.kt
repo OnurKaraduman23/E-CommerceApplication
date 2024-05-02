@@ -1,4 +1,4 @@
-package com.example.e_commerceapplication.presentation.fragments
+package com.example.e_commerceapplication.presentation.fragments.products
 
 import com.example.e_commerceapplication.domain.model.Products
 
